@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updated</title>
 
+<style>
+  :root{
+    --bg: #0a0a10;
+    --bg-glow: #1b1533;
+    --card: #15141d;
+    --border: rgba(255,255,255,0.08);
+    --text-primary: #eeeef4;
+    --text-secondary: #a3a1b3;
+    --text-muted: #6e6c7e;
+    --accent: #8b7cf6;
+    --accent-strong: #a996ff;
+    --accent-dim: rgba(139,124,246,0.12);
+    --radius: 20px;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:
+      radial-gradient(600px 500px at 50% 30%, var(--bg-glow), transparent 70%),
+      var(--bg);
+    color:var(--text-primary);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+
+  .card{
+    max-width:440px;
+    width:100%;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:40px 32px;
+    text-align:center;
+  }
+
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:var(--accent-strong);
+    background:var(--accent-dim);
+    border:1px solid rgba(139,124,246,0.25);
+    padding:6px 16px;
+    border-radius:999px;
+    margin-bottom:24px;
+  }
+
+  .badge .pulse{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--accent-strong);
+  }
+
+  h1{
+    font-size:28px;
+    font-weight:600;
+    margin:0 0 16px;
+    letter-spacing:-0.01em;
+  }
+
+  p{
+    font-size:15px;
+    color:var(--text-secondary);
+    line-height:1.6;
+    margin:0 0 28px;
+  }
+
+  a.btn{
+    display:block;
+    padding:14px;
+    border-radius:12px;
+    background:var(--text-primary);
+    color:#0a0a10;
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+    margin-bottom:16px;
+  }
+
+  a.btn:hover{
+    opacity:0.9;
+  }
+
+  .hint{
+    font-size:13px;
+    color:var(--text-muted);
+    margin:0;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <span class="badge">
+      <span class="pulse"></span>
+      Update available
+    </span>
+
+    <h1>Script Updated</h1>
+
+    <p>
+      A new version is out and this link is now out of date.
+      Use the current link below — it always points to the latest version.
+    </p>
+
+    <a
+      class="btn"
+      href="https://direct-link.net/1145090/peGNtejumZXX"
+    >
+      Open new link
+    </a>
+
+    <p class="hint">
+      This link is refreshed regularly. Bookmark it instead.
+    </p>
+
+  </div>
+
+</body>
+</html>
